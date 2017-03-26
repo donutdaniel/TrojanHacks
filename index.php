@@ -54,8 +54,11 @@ foreach($html->find('img') as $element){
 		break;
 	}
 }
+
+//array
 	
 //echo $hacks[1][0] . $hacks[1][1] . $hacks[1][2] . $hacks[1][3];
+//$hacks = name, location, date, picture, icon
 echo $size;
 foreach($hacks as $out){
  //	echo $out[3];
@@ -68,10 +71,10 @@ echo '<br>';
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Parser Example</title>
+	<title>Hackathon Music</title>
 </head>
 <body>
-		Parser
+
 </body>
 </html>
 
