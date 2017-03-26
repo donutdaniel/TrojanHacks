@@ -1,10 +1,8 @@
-import requests
+import urllib2
 from BeautifulSoup import BeautifulSoup
 
 url = 'https://www.chiefdelphi.com/forums/portal.php'
 
-response = requests.get(url)
-html = response.content
-
-soup = BeautifulSoup(html)
+page = urllib2.urlopen(url)
+soup = BeautifulSoup(page)
 print soup.prettify()
